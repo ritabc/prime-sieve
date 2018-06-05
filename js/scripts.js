@@ -7,7 +7,7 @@ function createArray(highNumber) {
 };
 
 function findPrimes() {
-  var number = 17;
+  var number = 100;
   var myArray = createArray(number)
 
   // loop should eventually start here
@@ -38,14 +38,17 @@ function findPrimes() {
       myArray.splice(index, 1);
     // that will include myArray[0], so it needs to be added back, and since we do this in the loop we need to reverse outside of the loop
     }
-    console.log(myArray);
   });
 
 
   // now myArray = [2,3,5,7,9,11,13,15,17]
   myArray.map(function(number, index) {
-    myArray.splice()
+    if ((number % myArray[1] === 0) && (number !== myArray[1])) {
+    myArray.splice(index, 1)
+    };
   });
+  console.log(myArray);
+
 
 };
 
