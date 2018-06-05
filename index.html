@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Transportation Survey</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>Transportation Survey</h2>
+      </div>
+      <form id="transportation-survey">
+        <div class="form-group">
+          <p>In the past year, I have used the following modes of transportation to travel to work or school:</p>
+          <label><input type="checkbox" name="work-transportation" value="bike">Riding a bike.</label></br>
+          <label><input type="checkbox" name="work-transportation" value="car">Driving a car.</label></br>
+          <label><input type="checkbox" name="work-transportation" value="carpool">Carpooling with Others.</label></br>
+          <label><input type="checkbox" name="work-transportation" value="walk">Walking.</label><br>
+          <label><input type="checkbox" name="work-transportation" value="bus">Riding the bus.</label><br>
+          <label><input type="checkbox" name="work-transportation" value="train">Riding the train.</label><br>
+          <label><input type="checkbox" name="work-transportation" value="streetcar">Riding the streetcar.</label><br>
+          <label><input type="checkbox" name="work-transportation" value="taxi">Taking a taxi.</label><br>
+          <label><input type="checkbox" name="work-transportation" value="rideshare">Using a rideshare service like Lyft or Uber.</label><br>
+          <label><input type="checkbox" name="work-transportation" value="skateboard">Skateboarding.</label><br>
+          <label><input type="checkbox" name="work-transportation" value="rollerblade">Rollerblading.</label><br>
+          <label><input type="checkbox" name="work-transportation" value="scooter">Riding a scooter.</label><br>
+          <label><input type="checkbox" name="work-transportation" value="other">Another mode of transportation not listed here.</label><br>
+        </div>
+        <button id="submit" type="submit">Submit Survey</button>
+      </form>
+      <span id="work-responses">
+        <p><b>You use the following methods of transportation to travel to work or school:</b></p>
+      </span>
+    </div>
+  </body>
+</html>
