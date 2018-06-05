@@ -33,16 +33,19 @@ function findPrimes() {
 
   // for (i = myArray[0]; i <= myArray.length + 1; i++) {
   myArray.map(function(number, index) {
-    // remove all elements which are multiples of myArray[0] (which first is 2) 
-    myArray.splice(index, 1);
-    myArray.unshift(number);
+    // remove all elements which are multiples of myArray[0] (which first is 2)
+    if ((number % myArray[0] === 0) && (number !== myArray[0])) {
+      myArray.splice(index, 1);
+    // that will include myArray[0], so it needs to be added back, and since we do this in the loop we need to reverse outside of the loop
+    }
+    console.log(myArray);
   });
-  myArray.reverse()
-  console.log(myArray);
 
+
+  // now myArray = [2,3,5,7,9,11,13,15,17]
   myArray.map(function(number, index) {
     myArray.splice()
-  })
+  });
 
 };
 
