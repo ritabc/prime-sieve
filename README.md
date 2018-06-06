@@ -1,4 +1,4 @@
-# Transportation Survey Practice
+# Looping Practice
 
 #### Practice with Looping 06.05.2018
 
@@ -7,6 +7,8 @@
 ## Description
 
 Exercises to practice looping
+* Create an array to store checked checkboxes, then print the result to the page
+* Takes a number and prints to the page all prime numbers less than or equal to it, using the Sieve of Eratosthenes
 
 ## Setup/Contribution Requirements
 
@@ -24,7 +26,7 @@ Exercises to practice looping
 * Bootstrap
 
 ## Links
-[Here](https://github.com/ritabc/transportation-survey) is a link to the public repository.
+[Here](https://github.com/ritabc/prime-sieve) is a link to the public repository.
 
 ## License
 

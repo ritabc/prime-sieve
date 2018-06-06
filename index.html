@@ -10,31 +10,38 @@
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron">
+      <div class="transportation well">
         <h2>Transportation Survey</h2>
+        <form id="transportation-survey">
+          <div class="form-group">
+            <p>In the past year, I have used the following modes of transportation to travel to work or school:</p>
+            <label><input type="checkbox" name="work-transportation" value="Bike">Riding a bike.</label></br>
+            <label><input type="checkbox" name="work-transportation" value="Car">Driving a car.</label></br>
+            <label><input type="checkbox" name="work-transportation" value="Carpool">Carpooling with Others.</label></br>
+            <label><input type="checkbox" name="work-transportation" value="Walk">Walking.</label><br>
+            <label><input type="checkbox" name="work-transportation" value="Bus">Riding the bus.</label><br>
+            <label><input type="checkbox" name="work-transportation" value="Train">Riding the train.</label><br>
+            <label><input type="checkbox" name="work-transportation" value="Streetcar">Riding the streetcar.</label><br>
+            <label><input type="checkbox" name="work-transportation" value="Taxi">Taking a taxi.</label><br>
+            <label><input type="checkbox" name="work-transportation" value="Rideshare">Using a rideshare service like Lyft or Uber.</label><br>
+            <label><input type="checkbox" name="work-transportation" value="Skateboard">Skateboarding.</label><br>
+            <label><input type="checkbox" name="work-transportation" value="Rollerblade">Rollerblading.</label><br>
+            <label><input type="checkbox" name="work-transportation" value="Scooter">Riding a scooter.</label><br>
+            <label><input type="checkbox" name="work-transportation" value="Other">Another mode of transportation not listed here.</label><br>
+          </div>
+          <button id="transport-submit" type="submit">Submit Survey</button>
+        </form>
+        <span id="work-responses">
+          <p><b>You use the following methods of transportation to travel to work or school:</b></p>
+        </span>
       </div>
-      <form id="transportation-survey">
-        <div class="form-group">
-          <p>In the past year, I have used the following modes of transportation to travel to work or school:</p>
-          <label><input type="checkbox" name="work-transportation" value="bike">Riding a bike.</label></br>
-          <label><input type="checkbox" name="work-transportation" value="car">Driving a car.</label></br>
-          <label><input type="checkbox" name="work-transportation" value="carpool">Carpooling with Others.</label></br>
-          <label><input type="checkbox" name="work-transportation" value="walk">Walking.</label><br>
-          <label><input type="checkbox" name="work-transportation" value="bus">Riding the bus.</label><br>
-          <label><input type="checkbox" name="work-transportation" value="train">Riding the train.</label><br>
-          <label><input type="checkbox" name="work-transportation" value="streetcar">Riding the streetcar.</label><br>
-          <label><input type="checkbox" name="work-transportation" value="taxi">Taking a taxi.</label><br>
-          <label><input type="checkbox" name="work-transportation" value="rideshare">Using a rideshare service like Lyft or Uber.</label><br>
-          <label><input type="checkbox" name="work-transportation" value="skateboard">Skateboarding.</label><br>
-          <label><input type="checkbox" name="work-transportation" value="rollerblade">Rollerblading.</label><br>
-          <label><input type="checkbox" name="work-transportation" value="scooter">Riding a scooter.</label><br>
-          <label><input type="checkbox" name="work-transportation" value="other">Another mode of transportation not listed here.</label><br>
-        </div>
-        <button id="submit" type="submit">Submit Survey</button>
-      </form>
-      <span id="work-responses">
-        <p><b>You use the following methods of transportation to travel to work or school:</b></p>
-      </span>
+      <div class="find-primes well">
+        <h2>Find the Primes</h2>
+        <p>Enter a number to find the primes less than or equal to it.</p>
+        <input type="text" id="primes">
+        <button id="primes-submit" type="submit">Submit Number</button>
+        <p id="primes">The prime numbers less than or equal to the number: <span id=number></span> are: </p>
+      </div>
     </div>
   </body>
 </html>
